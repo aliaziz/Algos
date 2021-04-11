@@ -1,23 +1,21 @@
 import java.util.*;
+import java.util.function.BinaryOperator;
 
 /**
  * This is the TESTING GROUND/PLAYGROUND
  */
 public class MainJava {
+    static int max = 0;
 
     public  static void main(String[] args) {
-//        List<List<Integer>> lists = Arrays.asList(Arrays.asList(1, 2, 3, 40),
-//                Arrays.asList(4, 5, 6, 70),
-//                Arrays.asList(7, 8, 9, 100),
-//                Arrays.asList(10, 11, 12, 120));
-//        spiral2D(lists);
-        OurTreeNode treeNode = new OurTreeNode(3);
-        OurTreeNode leftNode = new OurTreeNode(2, new OurTreeNode(1), new OurTreeNode(3));
-        OurTreeNode rightNode = new OurTreeNode(4, new OurTreeNode(3), new OurTreeNode(5));
-        treeNode.left = leftNode;
-        treeNode.right = rightNode;
 
-        System.out.println(treeNode.getChildrenCount(treeNode));
-        System.out.println(treeNode.getHeight(treeNode));
+        //Rope can be k length
+        //max prod of the subset of k
+        // if k is 4, (3,1)(2,2)(1,1,1,1)(1,1,2)
+
+    }
+
+    private static int product(List<Integer> list) {
+        return list.stream().reduce((x, y) -> x * y).orElse(0);
     }
 }
