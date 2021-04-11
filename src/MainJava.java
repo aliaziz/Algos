@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.function.BinaryOperator;
+import java.util.logging.Handler;
 
 /**
  * This is the TESTING GROUND/PLAYGROUND
@@ -9,9 +10,6 @@ public class MainJava {
 
     public  static void main(String[] args) {
 
-        //Rope can be k length
-        //max prod of the subset of k
-        // if k is 4, (3,1)(2,2)(1,1,1,1)(1,1,2)
 
     }
 
